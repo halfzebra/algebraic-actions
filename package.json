@@ -1,0 +1,53 @@
+{
+  "name": "algebraic-action",
+  "version": "0.1.0",
+  "description": "A library that helps representing Redux Actions as an Algebraic Union Type in JavaScript.",
+  "main": "dist/algebraic-actions.cjs.js",
+  "module": "dist/algebraic-actions.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "flow-check": "flow check",
+    "format": "prettier --write lib/**/*.js rollup.config.js",
+    "preversion": "npm run test && npm run flow_check",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "redux",
+    "algebraic-data-types",
+    "union-type"
+  ],
+  "author": "Eduard Kyvenko <eduard.kyvenko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "7.0.0-rc.1",
+    "prop-types": ">=15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-rc.1",
+    "@babel/plugin-transform-runtime": "^7.0.0-rc.1",
+    "@babel/polyfill": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "@babel/preset-flow": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.14",
+    "jest": "^23.5.0",
+    "prettier": "^1.14.2",
+    "flow-bin": "^0.53.1",
+    "prop-types": "^15.6.2",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "^4.0.0-beta.8",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^4.0.0"
+  },
+  "jest": {
+    "testRegex": "(.*\\.spec.js)$"
+  }
+}
