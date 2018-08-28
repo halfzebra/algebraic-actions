@@ -10,7 +10,7 @@
     "test:watch": "jest --watch",
     "flow-check": "flow check",
     "format": "prettier --write lib/**/*.js rollup.config.js",
-    "preversion": "npm run test && npm run flow_check",
+    "preversion": "npm run test && npm run flow-check",
     "prepublish": "npm run build"
   },
   "keywords": [
