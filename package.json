@@ -1,5 +1,5 @@
 {
-  "name": "algebraic-action",
+  "name": "algebraic-actions",
   "version": "0.1.0",
   "description": "A library that helps representing Redux Actions as an Algebraic Union Type in JavaScript.",
   "main": "dist/algebraic-actions.cjs.js",
